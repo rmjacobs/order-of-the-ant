@@ -111,29 +111,24 @@ h1{
 }
 .button.primary{background:var(--red);border-color:var(--red);color:#fff}
 .button:hover{background:var(--on-night);color:var(--night);border-color:var(--on-night)}
-.pin-figure{margin:0;position:relative;max-width:470px;justify-self:end}
-.pin-figure::after{
-  content:"";
-  position:absolute;
-  inset:18px -18px -18px 18px;
+.pin-figure{
+  margin:0;
+  position:relative;
+  max-width:470px;
+  justify-self:end;
   border:1px solid rgba(215,173,79,.48);
-  z-index:0;
+  padding:0 0 20px;
 }
 .pin-figure img{
-  position:relative;
-  z-index:1;
   width:100%;
   display:block;
   box-shadow:var(--shadow);
   border:8px solid #efe9dc;
 }
 .pin-figure figcaption{
-  position:relative;
-  z-index:1;
-  margin-top:28px;
+  margin:16px 16px 0;
   color:var(--on-night-muted);
   font-size:.84rem;
-  max-width:42ch;
 }
 .facts{
   display:grid;
@@ -243,7 +238,6 @@ footer a{color:var(--on-night)}
   .hero-grid{gap:44px}
   h1{font-size:clamp(3rem,16vw,4.35rem)}
   .hero .lede{font-size:1rem}
-  .pin-figure::after{inset:10px -10px -10px 10px}
   .facts{grid-template-columns:1fr}
   .fact{display:flex;justify-content:center;align-items:baseline;gap:10px;padding:18px 16px;border-right:0;border-bottom:1px solid rgba(255,255,255,.16)}
   .fact:last-child{border-bottom:0}.fact strong{font-size:1.55rem}.fact span{margin:0}
