@@ -1,8 +1,11 @@
 # Order of the Ant
 
-A tribute page for the producers of the Order of the Ant on the [No Agenda](https://www.noagendashow.net/) podcast. Tribute donors of $333.33 or more received a single-run pin, designed by Back Office Jae, and a certificate signed by John C. Dvorak. The page lists every member.
+A tribute for the producers of the Order of the Ant on the [No Agenda](https://www.noagendashow.net/) podcast. Tribute donors of $333.33 or more received a single-run pin, designed by Back Office Jae, and a certificate signed by John C. Dvorak. The site lists every member, twice: once as a roll, once as a certificate.
 
 Live site: [rmjacobs.github.io/order-of-the-ant](https://rmjacobs.github.io/order-of-the-ant/)
+
+- [The roll](https://rmjacobs.github.io/order-of-the-ant/) is the front page.
+- [The certificate](https://rmjacobs.github.io/order-of-the-ant/certificate.html) is the same membership, set as the document they were sent.
 
 ## Where the names come from
 
@@ -12,7 +15,10 @@ The 146 members are taken from the Order of the Ant credit blocks on [adam.curry
 
 Static site. No build step.
 
-- `index.html` — the page and the member roster
+- `index.html` — the roll
+- `certificate.html` — the certificate
+- `js/roster.js` — the 146 names, shared by both pages
+- `js/page.js` — renders and searches that roster
 - `css/styles.css` — styles
 - `fonts/` — Mukta, served with the page
 - `images/` — pin artwork
